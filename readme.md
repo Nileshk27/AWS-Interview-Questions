@@ -53,6 +53,8 @@
 
 # Answer: I would start by deploying the application in multiple AWS regions to ensure redundancy. I’d use Route 53 with latency-based routing or geolocation routing to direct user traffic to the region that provides the lowest latency or is geographically closest. For the backend, I’d use Amazon RDS with cross-region read replicas to ensure that the database is available in all regions. I’d also enable S3 Cross-Region Replication to ensure that any data stored in S3 is replicated to another region for redundancy. For dynamic content, I’d use Amazon DynamoDB Global Tables to automatically replicate data across regions. Lastly, I’d use Amazon CloudFront as a global CDN to cache content and provide faster delivery to users worldwide. This architecture ensures high availability and improved performance across multiple regions.
 
+referance site : https://manoj777.medium.com/12-aws-interview-questions-asked-during-my-interview-bb9c8c6dfab
+
 # 10. Logging and Monitoring
 
 # Question: Your application has been experiencing intermittent issues, and you need to set up a comprehensive logging and monitoring solution to diagnose and resolve the problems. How would you implement logging and monitoring for your application on AWS? What services would you use, and how would you configure them?
